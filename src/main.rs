@@ -1,5 +1,6 @@
 mod components;
 mod errors;
+mod projects;
 mod template;
 
 use perseus::plugins::Plugins;
