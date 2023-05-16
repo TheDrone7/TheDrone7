@@ -7,7 +7,3 @@
     box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
   }
 }
-
-.page-content {
-  @apply px-8 pt-8;
-}
