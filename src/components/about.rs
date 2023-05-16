@@ -65,7 +65,7 @@ pub fn AboutSection<G: Html>(cx: Scope) -> View<G> {
                 }
 
                 p (class="my-4") {
-                    "Apart from coding, I enjoy gaming, going on walks, and blasting music. "
+                    "Apart from coding, I enjoy gaming, cooking, going on walks, and blasting music. "
                     "I am also fairly active on discord engaging with different communities such as "
                     "the Replit community or the Riot Games Third Party Developers community."
                 }
