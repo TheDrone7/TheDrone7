@@ -11,13 +11,13 @@ pub fn Drawer<G: Html>(cx: Scope) -> View<G> {
                     a (href="#about") { "About" }
                 }
                 li {
-                    a (href="#contact") { "Contact" }
-                }
-                li {
                     a (href="#projects") { "Projects" }
                 }
                 li {
                     a (href="#skills") { "Skills" }
+                }
+                li {
+                    a (href="#contact") { "Contact" }
                 }
             }
         }

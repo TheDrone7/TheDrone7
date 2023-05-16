@@ -1,3 +1,4 @@
+pub mod about;
 pub mod contents;
 pub mod drawer;
 pub mod hero;

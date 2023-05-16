@@ -1,4 +1,4 @@
-use super::hero::Hero;
+use super::{about::AboutSection, hero::Hero};
 use perseus::prelude::*;
 use sycamore::prelude::*;
 
@@ -6,5 +6,6 @@ use sycamore::prelude::*;
 pub fn Content<G: Html>(cx: Scope) -> View<G> {
     view! { cx,
         Hero {}
+        AboutSection {}
     }
 }
