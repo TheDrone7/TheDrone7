@@ -1,4 +1,4 @@
-use crate::components::{drawer::Drawer, navbar::Navbar};
+use crate::components::{contents::Content, drawer::Drawer, navbar::Navbar};
 use perseus::prelude::*;
 use serde::{Deserialize, Serialize};
 use sycamore::prelude::*;
@@ -13,22 +13,22 @@ struct IndexPageState {
 fn index_page<G: Html>(cx: Scope, state: &IndexPageStateRx) -> View<G> {
     view! { cx,
         nav (class="drawer") {
-        input (id="nav-drawer", type="checkbox", class="drawer-toggle") {}
-        div (class="drawer-content flex flex-col") {
-          Navbar {}
-          div (class="page-content") {
-            h1 { "Hello world!" }
-          }
+            input (id="nav-drawer", type="checkbox", class="drawer-toggle") {}
+            div (class="drawer-content flex flex-col") {
+               Navbar {}
+                div (class="page-content") {
+                    Content {}
+                }
+            }
+            Drawer {}
         }
-        Drawer {}
-      }
     }
 }
 
 #[engine_only_fn]
 fn head(cx: Scope, _props: IndexPageState) -> View<SsrNode> {
     view! { cx,
-      title { "TheDrone7" }
+        title { "TheDrone7" }
     }
 }
 
