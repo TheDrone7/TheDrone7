@@ -2,10 +2,12 @@ pub mod general;
 pub mod node;
 pub mod skill;
 pub mod structure;
+pub mod style;
 
 use super::icons::{down::ChevronDown, up::ChevronUp};
 use general::GeneralSkills;
 use node::NodeSkills;
+use style::StyleSkills;
 use sycamore::prelude::*;
 
 #[component]
@@ -28,6 +30,7 @@ pub fn SkillsSection<G: Html>(cx: Scope) -> View<G> {
                 }
                 div(class="grid grid-flow-row lg:grid-cols-2 2xl:grid-cols-3") {
                     NodeSkills {}
+                    StyleSkills {}
                     GeneralSkills {}
                 }
             }

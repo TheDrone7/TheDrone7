@@ -25,13 +25,13 @@ pub fn get_general_skills() -> Vec<Skill> {
     s.push(Skill {
         label: "C++".to_string(),
         icon: ".perseus/static/cpp.png".to_string(),
-        proficiency: 70,
+        proficiency: 60,
     });
 
     s.push(Skill {
         label: "C".to_string(),
         icon: ".perseus/static/c.png".to_string(),
-        proficiency: 60,
+        proficiency: 50,
     });
 
     s
@@ -42,14 +42,14 @@ pub fn GeneralSkills<G: Html>(cx: Scope) -> View<G> {
     let general_skills = create_signal(cx, get_general_skills());
 
     view! { cx,
-        div(class="card w-96 bg-neutral shadow-md border border-secondary-focus hover:border-secondary hover:shadow-xl m-4") {
+        div(class="card w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
             div(class="card-body") {
                 div (class="card-title") { "General-purpose languages" }
                 div (class="py-2 flex flex-col gap-2") {
                     Keyed (
                         iterable=general_skills,
                         view=|cx, x| view! { cx,
-                            SkillView (skill=x, bars="progress-primary")
+                            SkillView (skill=x, bars="progress-secondary")
                         },
                         key=|x| x.clone().label,
                     )
