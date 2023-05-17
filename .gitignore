@@ -1,7 +1,0 @@
-/target
-dist/
-pkg/
-node_modules/
-Cargo.lock
-package-lock.json
-tailwindcss-linux-x64
