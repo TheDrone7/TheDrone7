@@ -1,7 +1,7 @@
 use sycamore::prelude::*;
 
 use super::{link::ProjectLinkButton, stack::ProjectStackIcon};
-use crate::projects::structure::{Project, ProjectLink};
+use crate::projects::structure::Project;
 
 #[derive(Prop)]
 pub struct ProjectCardProps {
@@ -13,7 +13,7 @@ pub fn ProjectCard<G: Html>(cx: Scope, props: ProjectCardProps) -> View<G> {
     let stack = create_signal(cx, props.project.stack);
     let links = create_signal(cx, props.project.links);
     view! { cx,
-        div(class="card w-96 bg-neutral shadow-md border border-primary m-4") {
+        div(class="card w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
             div(class="card-body") {
                 div (class="card-title") { (props.project.title) }
                 p (class="py-2") { (props.project.description) }
