@@ -33,7 +33,7 @@ jobs:
           args: perseus-cli
 
       - name: Install daisyui
-        run: npm ci
+        run: npm install
 
       # run build script
       - name: Build Website
