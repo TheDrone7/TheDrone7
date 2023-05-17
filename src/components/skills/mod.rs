@@ -1,3 +1,4 @@
+pub mod cloud;
 pub mod database;
 pub mod general;
 pub mod node;
@@ -6,6 +7,7 @@ pub mod structure;
 pub mod style;
 
 use super::icons::{down::ChevronDown, up::ChevronUp};
+use cloud::CloudSkills;
 use database::DatabaseSkills;
 use general::GeneralSkills;
 use node::NodeSkills;
@@ -35,6 +37,7 @@ pub fn SkillsSection<G: Html>(cx: Scope) -> View<G> {
                     StyleSkills {}
                     GeneralSkills {}
                     DatabaseSkills {}
+                    CloudSkills {}
                 }
             }
             div (class="absolute bottom-12 flex-row") {
