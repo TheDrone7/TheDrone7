@@ -34,4 +34,5 @@ pub fn main<G: Html>() -> PerseusApp<G> {
             },
         ))
         .static_alias("/tailwind.css", "dist/tailwind.css")
+        .static_alias("/CNAME", "CNAME")
 }
