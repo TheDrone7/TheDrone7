@@ -67,7 +67,7 @@ pub fn project_portfolio() -> Project {
     });
     links.push(ProjectLink {
         label: "Source".to_string(),
-        href: "https://replit.com/@TheDrone7/TheDrone7".to_string(),
+        href: "https://github.com/TheDrone7/TheDrone7".to_string(),
     });
 
     stack.push(stack_rust());
