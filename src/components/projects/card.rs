@@ -13,7 +13,7 @@ pub fn ProjectCard<G: Html>(cx: Scope, props: ProjectCardProps) -> View<G> {
     let stack = create_signal(cx, props.project.stack);
     let links = create_signal(cx, props.project.links);
     view! { cx,
-        div(class="card w-96 bg-neutral shadow-md shadow-primary m-4") {
+        div(class="card w-96 bg-neutral shadow-md border border-primary m-4") {
             div(class="card-body") {
                 div (class="card-title") { (props.project.title) }
                 p (class="py-2") { (props.project.description) }

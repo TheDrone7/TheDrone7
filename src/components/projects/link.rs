@@ -10,7 +10,7 @@ pub struct Props {
 pub fn ProjectLinkButton<G: Html>(cx: Scope, props: Props) -> View<G> {
     let primary = props.label == "View".to_string();
     let class = if (primary) {
-        "btn btn-primary"
+        "btn btn-secondary"
     } else {
         "btn btn-ghost"
     };

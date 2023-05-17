@@ -13,12 +13,12 @@ pub fn ProjectSection<G: Html>(cx: Scope) -> View<G> {
 
     view! { cx,
         div (class="hero min-h-screen relative bg-base-100", id="projects") {
-            div (class="hero-content flex-col max-w-screen-lg pt-24 pb-32") {
+            div (class="hero-content flex-col max-w-screen-lg 2xl:max-w-screen-2xl pt-24 pb-32") {
                 h1 (class="text-4xl") {
                     span { "My " }
                     span (class="text-primary-focus") { "Projects" }
                 }
-                div(class="grid grid-flow-row lg:grid-cols-2") {
+                div(class="grid grid-flow-row lg:grid-cols-2 2xl:grid-cols-3") {
                     Keyed (
                         iterable=projects_list,
                         view=|cx, x| view! { cx,
@@ -32,7 +32,7 @@ pub fn ProjectSection<G: Html>(cx: Scope) -> View<G> {
                 a (href="#about", class="btn btn-circle btn-outline mr-6") {
                     ChevronUp {}
                 }
-                a (href="#contact", class="btn btn-circle btn-outline") {
+                a (href="#skills", class="btn btn-circle btn-outline") {
                     ChevronDown {}
                 }
             }
