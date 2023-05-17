@@ -1,3 +1,3 @@
 # TheDrone7
 
-https://thedrone7.dev
+https://www.thedrone7.dev
