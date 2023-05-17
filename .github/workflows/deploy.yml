@@ -29,7 +29,8 @@ jobs:
       - name: Install perseus-cli
         uses: actions-rs/cargo@v1
         with:
-          command: install perseus-cli
+          command: install
+          args: perseus-cli
 
       - name: Install daisyui
         run: npm ci
