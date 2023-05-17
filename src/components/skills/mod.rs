@@ -2,6 +2,7 @@ pub mod cloud;
 pub mod database;
 pub mod general;
 pub mod node;
+pub mod other;
 pub mod skill;
 pub mod structure;
 pub mod style;
@@ -11,6 +12,7 @@ use cloud::CloudSkills;
 use database::DatabaseSkills;
 use general::GeneralSkills;
 use node::NodeSkills;
+use other::OtherSkills;
 use style::StyleSkills;
 use sycamore::prelude::*;
 
@@ -38,6 +40,7 @@ pub fn SkillsSection<G: Html>(cx: Scope) -> View<G> {
                     GeneralSkills {}
                     DatabaseSkills {}
                     CloudSkills {}
+                    OtherSkills {}
                 }
             }
             div (class="absolute bottom-12 flex-row") {
