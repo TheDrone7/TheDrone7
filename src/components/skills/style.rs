@@ -42,7 +42,7 @@ pub fn StyleSkills<G: Html>(cx: Scope) -> View<G> {
     let style_skills = create_signal(cx, get_style_skills());
 
     view! { cx,
-        div(class="card w-96 bg-neutral shadow-md border border-secondary-focus hover:border-secondary hover:shadow-xl m-4") {
+        div(class="card w-4/5 sm:w-96 bg-neutral shadow-md border border-secondary-focus hover:border-secondary hover:shadow-xl m-4") {
             div(class="card-body") {
                 div (class="card-title") { "Styling tools" }
                 div (class="py-2 flex flex-col gap-2") {

@@ -34,7 +34,15 @@ pub fn SkillsSection<G: Html>(cx: Scope) -> View<G> {
                     br {}
                     "Here is a more detailed list of my skills and proficiency."
                 }
-                div(class="grid grid-flow-row lg:grid-cols-2 2xl:grid-cols-3") {
+                div (class="alert shadow-lg border border-info w-4/5") {
+                    div {
+                        span {
+                            "The proficiency is relative to each other based on number of years and projects I "
+                            "have built with the respective skill, these are not based on any global standards."
+                        }
+                    }
+                }
+                div(class="grid grid-flow-row lg:grid-cols-2 2xl:grid-cols-3 justify-items-center") {
                     NodeSkills {}
                     StyleSkills {}
                     GeneralSkills {}

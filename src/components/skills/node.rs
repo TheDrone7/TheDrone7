@@ -54,7 +54,7 @@ pub fn NodeSkills<G: Html>(cx: Scope) -> View<G> {
     let node_skills = create_signal(cx, get_node_skills());
 
     view! { cx,
-        div(class="card w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
+        div(class="card w-4/5 sm:w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
             div(class="card-body") {
                 div (class="card-title") { "JavaScript /TS" }
                 div (class="py-2 flex flex-col gap-2") {

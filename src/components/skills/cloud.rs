@@ -42,7 +42,7 @@ pub fn CloudSkills<G: Html>(cx: Scope) -> View<G> {
     let cloud_skills = create_signal(cx, get_cloud_skills());
 
     view! { cx,
-        div(class="card w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
+        div(class="card w-4/5 sm:w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
             div(class="card-body") {
                 div (class="card-title") { "Cloud Platforms" }
                 div (class="py-2 flex flex-col gap-2") {

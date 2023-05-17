@@ -18,7 +18,7 @@ pub fn ProjectSection<G: Html>(cx: Scope) -> View<G> {
                     span { "My " }
                     span (class="text-primary-focus") { "Projects" }
                 }
-                div(class="grid grid-flow-row lg:grid-cols-2 2xl:grid-cols-3") {
+                div(class="grid grid-flow-row lg:grid-cols-2 2xl:grid-cols-3 justify-items-center") {
                     Keyed (
                         iterable=projects_list,
                         view=|cx, x| view! { cx,

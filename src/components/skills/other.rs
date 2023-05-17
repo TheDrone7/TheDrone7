@@ -36,7 +36,7 @@ pub fn OtherSkills<G: Html>(cx: Scope) -> View<G> {
     let other_skills = create_signal(cx, get_other_skills());
 
     view! { cx,
-        div(class="card w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
+        div(class="card w-4/5 sm:w-96 bg-neutral shadow-md border border-primary-focus hover:border-primary hover:shadow-xl m-4") {
             div(class="card-body") {
                 div (class="card-title") { "Other tools" }
                 p { "Tools I use from time-to-time." }
