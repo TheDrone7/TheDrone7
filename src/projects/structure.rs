@@ -1,17 +1,20 @@
+#[derive(Clone, PartialEq)]
 pub struct ProjectLink {
-    label: &str,
-    href: &str,
+    pub label: String,
+    pub href: String,
 }
 
+#[derive(Clone, PartialEq)]
 pub struct ProjectStackItem {
-    name: &str,
-    desc: &str,
-    image: &str,
+    pub name: String,
+    pub desc: String,
+    pub image: String,
 }
 
+#[derive(Clone, PartialEq)]
 pub struct Project {
-    title: &str,
-    description: &str,
-    links: Vec<ProjectLink>,
-    stack: Vec<ProjectStackItem>,
+    pub title: String,
+    pub description: String,
+    pub links: Vec<ProjectLink>,
+    pub stack: Vec<ProjectStackItem>,
 }

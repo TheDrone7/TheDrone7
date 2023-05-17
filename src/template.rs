@@ -10,7 +10,7 @@ struct IndexPageState {
 }
 
 #[auto_scope]
-fn index_page<G: Html>(cx: Scope, state: &IndexPageStateRx) -> View<G> {
+fn index_page<G: Html>(cx: Scope, _state: &IndexPageStateRx) -> View<G> {
     view! { cx,
         nav (class="drawer") {
             input (id="nav-drawer", type="checkbox", class="drawer-toggle") {}
