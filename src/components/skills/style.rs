@@ -54,7 +54,7 @@ pub fn StyleSkills<G: Html>(cx: Scope) -> View<G> {
                         key=|x| x.clone().label,
                     )
                 }
-                p (class="") {
+                p (class="text-primary-content") {
                     "I am not a designer, but I am proficient at implementing designs."
                 }
             }
