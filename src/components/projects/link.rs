@@ -8,8 +8,14 @@ pub struct Props {
 
 #[component]
 pub fn ProjectLinkButton<G: Html>(cx: Scope, props: Props) -> View<G> {
+    let primary = props.label == "View".to_string();
+    let class = if (primary) {
+        "btn btn-primary"
+    } else {
+        "btn btn-ghost"
+    };
     view! { cx,
-        a (class="btn", href=props.href, target="_blank") {
+        a (class=class, href=props.href, target="_blank") {
             (props.label)
         }
     }

@@ -107,31 +107,6 @@ pub fn project_corona_jam() -> Project {
     }
 }
 
-pub fn project_descord() -> Project {
-    let mut links: Vec<ProjectLink> = Vec::new();
-    let mut stack: Vec<ProjectStackItem> = Vec::new();
-
-    links.push(ProjectLink {
-        label: "View".to_string(),
-        href: "https://deno.land/x/descord/".to_string(),
-    });
-    links.push(ProjectLink {
-        label: "Source".to_string(),
-        href: "https://github.com/TheDrone7/descord".to_string(),
-    });
-
-    stack.push(stack_deno());
-    stack.push(stack_typescript());
-
-    Project {
-        title: "Descord (incomplete)".to_string(),
-        description: "A stack_typescript()-based wrapper for the discord API with deno."
-            .to_string(),
-        links,
-        stack,
-    }
-}
-
 pub fn project_dronotes() -> Project {
     let mut links: Vec<ProjectLink> = Vec::new();
     let mut stack: Vec<ProjectStackItem> = Vec::new();
@@ -185,7 +160,6 @@ pub fn get_project_list() -> Vec<Project> {
     projects.push(project_shieldbow());
     projects.push(project_portfolio());
     projects.push(project_corona_jam());
-    projects.push(project_descord());
     projects.push(project_dronotes());
     projects.push(project_mod_dashboard());
     projects
