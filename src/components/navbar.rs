@@ -1,5 +1,4 @@
 use super::icons::hamburger::HamburgerIcon;
-use perseus::prelude::*;
 use sycamore::prelude::*;
 
 #[component]

@@ -1,5 +1,4 @@
 use super::icons::{down::ChevronDown, up::ChevronUp};
-use perseus::prelude::*;
 use sycamore::prelude::*;
 
 use chrono::{DateTime, Utc};

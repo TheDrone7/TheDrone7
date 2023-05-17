@@ -1,5 +1,7 @@
-use super::{about::AboutSection, hero::Hero, projects::ProjectSection, skills::SkillsSection};
-use perseus::prelude::*;
+use super::{
+    about::AboutSection, contact::ContactSection, hero::Hero, projects::ProjectSection,
+    skills::SkillsSection,
+};
 use sycamore::prelude::*;
 
 #[component]
@@ -9,5 +11,6 @@ pub fn Content<G: Html>(cx: Scope) -> View<G> {
         AboutSection {}
         ProjectSection {}
         SkillsSection {}
+        ContactSection {}
     }
 }

@@ -1,4 +1,5 @@
 pub mod about;
+pub mod contact;
 pub mod contents;
 pub mod drawer;
 pub mod hero;

@@ -1,5 +1,4 @@
 use super::icons::down::ChevronDown;
-use perseus::prelude::*;
 use sycamore::prelude::*;
 
 #[component]
