@@ -92,7 +92,7 @@ pub fn ContactSection<G: Html>(cx: Scope) -> View<G> {
                 }
             }
             div (class="absolute bottom-12 flex-row") {
-                a (href="#skills", class="btn btn-circle btn-outline mr-6") {
+                a (href="#skills", class="btn btn-circle btn-outline mr-6", aria_label="Visit Skills Section") {
                     ChevronUp {}
                 }
             }

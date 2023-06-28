@@ -29,10 +29,10 @@ pub fn ProjectSection<G: Html>(cx: Scope) -> View<G> {
                 }
             }
             div (class="absolute bottom-12 flex-row") {
-                a (href="#about", class="btn btn-circle btn-outline mr-6") {
+                a (href="#about", class="btn btn-circle btn-outline mr-6", aria_label="Visit About Section") {
                     ChevronUp {}
                 }
-                a (href="#skills", class="btn btn-circle btn-outline") {
+                a (href="#skills", class="btn btn-circle btn-outline", aria_label="Visit Skills Section") {
                     ChevronDown {}
                 }
             }

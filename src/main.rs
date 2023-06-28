@@ -14,10 +14,11 @@ pub fn main<G: Html>() -> PerseusApp<G> {
         .error_views(errors::get_error_views())
         .index_view(|cx| {
             view! { cx,
-                html {
+                html (lang = "en-US") {
                     head {
                         meta(charset = "UTF-8")
                         meta(name = "viewport", content = "width=device-width, initial-scale=1.0")
+                        meta(name = "description", content = "Harmeet Singh (@TheDrone7) is a full-stack web developer based in Ottawa, Canada.")
                         link(rel = "stylesheet", href = "/tailwind.css")
                     }
                     body {

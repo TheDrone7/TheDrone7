@@ -70,10 +70,10 @@ pub fn AboutSection<G: Html>(cx: Scope) -> View<G> {
                 }
             }
             div (class="absolute bottom-12 flex-row") {
-                a (href="/", class="btn btn-circle btn-outline mr-6") {
+                a (href="/", class="btn btn-circle btn-outline mr-6", aria_label="Visit Landing Section") {
                     ChevronUp {}
                 }
-                a (href="#projects", class="btn btn-circle btn-outline") {
+                a (href="#projects", class="btn btn-circle btn-outline", aria_label="Visit Projects Section") {
                     ChevronDown {}
                 }
             }
