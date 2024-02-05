@@ -8,6 +8,6 @@ describe('Minimal Projects', () => {
 
   it('should contain 5 project items', () => {
     cy.mount(MinimalProjects);
-    cy.get('section').find('h3').should('have.length', 5);
+    cy.get('section').find('th').should('have.length', 5);
   });
 });
