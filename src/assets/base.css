@@ -1,19 +1,19 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	background-color: #999;
+  background-color: #999;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
   transition: color 0.5s ease;
-	color: #4caf50;
+  color: #4caf50;
 }
 
 a:hover {
-	color: #2e7d32;
+  color: #2e7d32;
 }
 
 .dark a:hover {
@@ -23,7 +23,6 @@ a:hover {
 ::-webkit-scrollbar {
   width: 12px;
 }
-
 
 ::-webkit-scrollbar-thumb {
   background-color: #888;
