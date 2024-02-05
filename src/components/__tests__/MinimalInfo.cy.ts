@@ -1,6 +1,6 @@
 import MinimalInfo from '../minimal/Info.vue';
 
-describe('Minimal Header', () => {
+describe('Minimal Info', () => {
   it('playground', () => {
     cy.mount(MinimalInfo);
   });
@@ -8,5 +8,6 @@ describe('Minimal Header', () => {
   it('renders properly', () => {
     cy.mount(MinimalInfo);
     cy.get('section').should('exist');
+    cy.get('h2').should('have.text', 'Info');
   });
 });
