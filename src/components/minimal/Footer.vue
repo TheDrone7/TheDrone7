@@ -10,7 +10,7 @@ const currentYear = computed(() => new Date().getFullYear());
 
 <template>
   <footer flex="~ row justify-between" text-white-5:70 light:text-black-5:70>
-    <div id="copyright">&copy; 2021-{{ currentYear }} &middot; Harry Binet</div>
+    <div id="copyright">&copy; 2021-{{ currentYear }} &middot; Harry Baines</div>
     <div flex="~ row gap-3 items-center" id="socials">
       <a
         href="https://discord.com/users/374886124126208000"
