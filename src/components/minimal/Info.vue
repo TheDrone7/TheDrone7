@@ -21,7 +21,7 @@ const suffix = computed(() => {
     <h2 text-xl font-bold>Info</h2>
     <div>
       <p block py-2>
-        Hi! I'm <span highlight>Harry</span>, a full stack web developer based
+        Hi! I'm <span highlight>Harmeet Singh</span>, a full stack web developer based
         in <span highlight>Ottawa, Canada</span>.
       </p>
       <p block py-2>

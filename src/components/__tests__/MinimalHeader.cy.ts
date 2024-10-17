@@ -12,7 +12,7 @@ describe('Minimal Header', () => {
 
   it('contains the name(s)', () => {
     cy.mount(MinimalHeader);
-    cy.get('header').contains('Harry Baines').and('contain', 'TheDrone7');
+    cy.get('header').contains('Harmeet Singh Bhatia').and('contain', 'TheDrone7');
   });
 
   it('contains the link to email', () => {

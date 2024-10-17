@@ -5,7 +5,7 @@
     <img src="@/assets/pfp.png" alt="Custom profile picture" h-12 w-12 />
     <div>
       <h1 text-3xl font="bold italic mono">
-         Harry Baines (<span
+         Harmeet Singh Bhatia (<span
           highlight
           title="This is just my online handle. It turned out to be fairly unique so I use it everywhere I can."
           >@TheDrone7</span

@@ -5,7 +5,7 @@ import BrandIcon from '@/components/icons/Brand.vue';
 <template>
   <div flex items-center gap-2>
     <BrandIcon h-8 w-8 />
-    <span text-lg font-bold>Harry Baines</span>
+    <span text-lg font-bold>Harmeet Singh Bhatia</span>
   </div>
 </template>
 

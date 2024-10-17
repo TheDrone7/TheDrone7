@@ -3,7 +3,7 @@
 describe('Minimal view experience', () => {
   it('visits the app root url', () => {
     cy.visit('/');
-    cy.contains('h1', 'Harry Baines');
+    cy.contains('h1', 'Harmeet Singh Bhatia');
   });
 
   it('loads all components', () => {
