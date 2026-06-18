@@ -21,16 +21,12 @@ const suffix = computed(() => {
     <h2 text-xl font-bold>Info</h2>
     <div>
       <p block py-2>
-        Hi! I'm <span highlight>Harmeet Singh</span>, a full stack web developer based
-        in <span highlight>Ottawa, Canada</span>.
+        Hi! I'm <span highlight>Harmeet Singh</span>, a software developer based
+        in <span highlight>Bengaluru, India</span>.
       </p>
       <p block py-2>
         I am (mostly) self-taught in web development, cybersecurity and systems administration. I have a passion for
         learning and exploring new technologies or frameworks.
-      </p>
-      <p block py-2>
-        I'm currently a {{ diff }}{{ suffix }} year student at <span highlight>Carleton University</span>, and
-        <span highlight>open to work</span>.
       </p>
     </div>
   </section>
