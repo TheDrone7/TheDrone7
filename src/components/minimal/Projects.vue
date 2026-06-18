@@ -1,6 +1,16 @@
 <script setup lang="ts">
 const projects = [
   {
+    title: 'FHEDB',
+    desc: 'A No-SQL database engine and query language written from scratch in rust',
+    links: [
+      {
+        link: 'https://github.com/TheDrone7/fhedb',
+        text: 'Source'
+      }
+    ]
+  },
+  {
     title: 'Shieldbow',
     desc: "Node.js library for interfacing with RIOT Games's API.",
     links: [
@@ -19,7 +29,7 @@ const projects = [
     desc: 'A simple random anime suggestion generator.',
     links: [
       {
-        link: 'https://github.com/TheDrone7/goodanime',
+        link: 'https://github.com/goodanimee/website',
         text: 'Source'
       },
       {
@@ -29,16 +39,12 @@ const projects = [
     ]
   },
   {
-    title: 'CoronaJam',
-    desc: 'A game made in 48 hours for a COVID-based hackathon.',
+    title: 'GoodAnime mobile',
+    desc: 'A mobile app for managing AniList anime lists.',
     links: [
       {
-        link: 'https://replit.com/@TheDrone7/cjnine',
+        link: 'https://github.com/goodanimee/mobile',
         text: 'Source'
-      },
-      {
-        link: 'coronajam.thedrone7.dev',
-        text: 'Play'
       }
     ]
   },
@@ -55,23 +61,13 @@ const projects = [
         text: 'Website'
       }
     ]
-  },
-  {
-    title: 'CPPest',
-    desc: 'A simple C++ testing framework inspired by Jest (WIP).',
-    links: [
-      {
-        link: 'https://gitlab.com/TheDrone7/cppest',
-        text: 'Source'
-      }
-    ]
   }
 ];
 </script>
 
 <template>
   <section flex="~ col gap-4" pb-4 divider>
-    <h2 text-xl font-bold>Other projects</h2>
+    <h2 text-xl font-bold>My projects</h2>
     <table>
       <tr v-for="project in projects" :key="project.title">
         <th v-text="project.title" text="right" font-bold pr-4 border="r white-5/20 solid" />
